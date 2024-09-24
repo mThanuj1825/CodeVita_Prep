@@ -1,8 +1,8 @@
 package Day_15_16_LinkedList.Implementation.SingleLinkedList;
 
 public class LinkedList {
-	Node head;
-	int size;
+	public Node head;
+	public int size;
 
 	public LinkedList() {
 		this.head = null;
