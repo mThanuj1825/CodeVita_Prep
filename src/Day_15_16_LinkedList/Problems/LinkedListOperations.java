@@ -1,21 +1,13 @@
 package Day_15_16_LinkedList.Problems;
 
-import Day_15_16_LinkedList.Implementation.LinkedList;
+import Day_15_16_LinkedList.Implementation.SingleLinkedList.LinkedList;
 
 public class LinkedListOperations {
 	public static void main(String[] args) {
 		LinkedList ll = new LinkedList();
-		//		ll.addFirst(5);
-		//		ll.addFirst(4);
-		//		ll.addFirst(3);
-		//		ll.addFirst(2);
-		//		ll.addFirst(1);
+		int[] arr = {1, 2, 3, 4, 5};
 
-		ll.addLast(0);
-		ll.addLast(1);
-		ll.addLast(2);
-		ll.addLast(3);
-		ll.addLast(4);
+		ll.buildList(arr);
 
 		System.out.println(ll);
 	}

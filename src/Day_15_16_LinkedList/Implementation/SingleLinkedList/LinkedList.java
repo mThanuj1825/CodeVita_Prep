@@ -1,4 +1,4 @@
-package Day_15_16_LinkedList.Implementation;
+package Day_15_16_LinkedList.Implementation.SingleLinkedList;
 
 public class LinkedList {
 	Node head;
@@ -114,6 +114,14 @@ public class LinkedList {
 		this.size--;
 
 		return data;
+	}
+
+	public void buildList(int[] arr) {
+		this.head = null;
+
+		for (int i : arr) {
+			this.addLast(i);
+		}
 	}
 
 	@Override
