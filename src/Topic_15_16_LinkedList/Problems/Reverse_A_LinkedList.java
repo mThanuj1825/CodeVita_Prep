@@ -1,6 +1,6 @@
-package Day_15_16_LinkedList.Problems;
+package Topic_15_16_LinkedList.Problems;
 
-import Day_15_16_LinkedList.Implementation.SingleLinkedList.Node;
+import Topic_15_16_LinkedList.Implementation.SingleLinkedList.Node;
 
 public class Reverse_A_LinkedList {
 	public static void main(String[] args) {

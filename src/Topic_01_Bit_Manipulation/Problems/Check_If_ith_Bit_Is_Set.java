@@ -1,4 +1,4 @@
-package Day_01_Bit_Manipulation.Problems;
+package Topic_01_Bit_Manipulation.Problems;
 
 public class Check_If_ith_Bit_Is_Set {
 	public static void main(String[] args) {

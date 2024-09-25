@@ -1,6 +1,6 @@
-package Day_15_16_LinkedList.Problems;
+package Topic_15_16_LinkedList.Problems;
 
-import Day_15_16_LinkedList.Implementation.SingleLinkedList.LinkedList;
+import Topic_15_16_LinkedList.Implementation.SingleLinkedList.LinkedList;
 
 public class LinkedList_Operations {
 	public static void main(String[] args) {

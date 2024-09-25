@@ -1,4 +1,4 @@
-package Day_01_Bit_Manipulation.Problems;
+package Topic_01_Bit_Manipulation.Problems;
 
 public class XOR_Of_Numbers_In_Range {
 	public static void main(String[] args) {

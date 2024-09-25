@@ -1,0 +1,16 @@
+- Modulo 10 gives us the last digit of a number
+- Ex: 7789
+    - 7789 % 10 = 9 (last digit)
+      7789 / 10 = 778
+    - 778 % 10 = 8 (last digit)
+      778 / 10 = 77
+    - 77 % 10 = 7 (last digit)
+      77 / 10 = 7
+    - 7 % 10 = 7 (last digit)
+      7 / 10 = 0
+- Pseudocode
+    while (N > 0){
+        last_digit = N % 10;
+        print(last_digit);
+        N = N / 10;
+    }

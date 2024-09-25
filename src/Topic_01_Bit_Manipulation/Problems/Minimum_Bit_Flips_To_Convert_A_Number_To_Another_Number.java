@@ -1,4 +1,4 @@
-package Day_01_Bit_Manipulation.Problems;
+package Topic_01_Bit_Manipulation.Problems;
 
 public class Minimum_Bit_Flips_To_Convert_A_Number_To_Another_Number {
 	public static void main(String[] args) {

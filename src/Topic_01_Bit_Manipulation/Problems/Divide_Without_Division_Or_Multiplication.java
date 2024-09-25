@@ -1,4 +1,4 @@
-package Day_01_Bit_Manipulation.Problems;
+package Topic_01_Bit_Manipulation.Problems;
 
 public class Divide_Without_Division_Or_Multiplication {
 	public static void main(String[] args) {

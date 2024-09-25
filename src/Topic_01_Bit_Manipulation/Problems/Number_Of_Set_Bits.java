@@ -1,4 +1,4 @@
-package Day_01_Bit_Manipulation.Problems;
+package Topic_01_Bit_Manipulation.Problems;
 
 public class Number_Of_Set_Bits {
 	public static void main(String[] args) {

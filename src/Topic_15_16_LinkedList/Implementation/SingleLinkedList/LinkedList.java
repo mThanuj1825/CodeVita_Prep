@@ -1,4 +1,4 @@
-package Day_15_16_LinkedList.Implementation.SingleLinkedList;
+package Topic_15_16_LinkedList.Implementation.SingleLinkedList;
 
 public class LinkedList {
 	public Node head;
