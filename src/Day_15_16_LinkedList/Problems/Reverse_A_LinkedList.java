@@ -2,7 +2,7 @@ package Day_15_16_LinkedList.Problems;
 
 import Day_15_16_LinkedList.Implementation.SingleLinkedList.Node;
 
-public class ReverseALinkedList {
+public class Reverse_A_LinkedList {
 	public static void main(String[] args) {
 		Node n5 = new Node(5);
 		Node n4 = new Node(4, n5);

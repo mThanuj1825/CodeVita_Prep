@@ -2,7 +2,7 @@ package Day_15_16_LinkedList.Problems;
 
 import Day_15_16_LinkedList.Implementation.SingleLinkedList.LinkedList;
 
-public class LinkedListOperations {
+public class LinkedList_Operations {
 	public static void main(String[] args) {
 		LinkedList ll = new LinkedList();
 		int[] arr = {1, 2, 3, 4, 5};

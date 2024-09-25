@@ -1,6 +1,6 @@
 package Day_01_Bit_Manipulation.Problems;
 
-public class DecimalToBinary {
+public class Decimal_To_Binary {
 	public static void main(String[] args) {
 		int n = 52;
 

@@ -1,6 +1,6 @@
 package Day_01_Bit_Manipulation.Problems;
 
-public class BinaryToDecimal {
+public class Binary_To_Decimal {
 	public static void main(String[] args) {
 		String binary = "1001110";
 

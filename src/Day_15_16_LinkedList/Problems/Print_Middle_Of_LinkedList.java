@@ -2,7 +2,7 @@ package Day_15_16_LinkedList.Problems;
 
 import Day_15_16_LinkedList.Implementation.SingleLinkedList.Node;
 
-public class PrintMiddleOfLinkedList {
+public class Print_Middle_Of_LinkedList {
 	public static void main(String[] args) {
 		Node n6 = new Node(6);
 		Node n5 = new Node(5, n6);
