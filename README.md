@@ -1,0 +1,1 @@
+Unzip the repository and then open it in "IntelliJ IDEA" for easier usage.

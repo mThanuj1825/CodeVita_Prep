@@ -1,0 +1,96 @@
+MSB:
+- Most Significant Bit
+- The left most bit in any binary representation is used for sign of a number
+- Example:
+    here, the number is positive, i.e. MSB = 0
+
+    0 0 0 0 ... 1 1 0 1 = bin(13)
+    A
+    |
+   MSB
+- If the computer have to store a negative number:
+    - First it represents it in positive format
+        - 0 0 0 0 ... 1 1 0 1 = bin(13)
+    - Then perform 2's complement
+        - First perform 1's compliment:
+            - 1 1 1 1 ... 0 0 1 0
+        - Add '1' to it
+            - 1 1 1 1 ... 0 0 1 1 = bin(-13)
+
+AND(&):
+- All true == true
+- Atleast one false == false
+-       1 1 0 1 = dec(13)
+        0 1 1 1 = dec(7)
+        -------
+        0 1 0 1 = dec(5)
+
+OR(|):
+- Atleast one true == true
+- All false == false
+-       1 1 0 1 = dec(13)
+        0 1 1 1 = dec(7)
+        -------
+        1 1 1 1 = dec(15)
+
+XOR(^):
+- Odd number of 1's == true
+- Even number of 1's == false
+-       1 1 0 1 = dec(13)
+        0 1 1 1 = dec(7)
+        -------
+        1 0 1 0 = dec(10)
+
+SHIFT:
+- Right shift (>>)
+    - Simply, move all the bits to the right by given number of times
+    - x = 13 >> 1
+    - before: 0 0 0 0 ... 1 1 0 1 = dec(13)
+      shift:  0 0 0 0 ... 0 1 1 0 | 1 ->
+      after:  0 0 0 0 ... 0 1 1 0 = dec(6)
+    - x = 13 >> 2
+    - before: 0 0 0 0 ... 1 1 0 1 = dec(13)
+      shift:  0 0 0 0 ... 0 0 1 1 | 0 1 ->
+      after:  0 0 0 0 ... 0 0 1 1 = dec(3)
+- Left shift (<<)
+    - Simply, move all the bits to the left by given number of times
+    - x = 13 << 1
+    - before: 0 0 0 0 ... 0 0 1 1 0 1 = dec(13)
+      after:  0 0 0 0 ... 0 1 1 0 1 0 = dec(26)
+    - x = 13 << 2
+    - before: 0 0 0 0 ... 0 0 1 1 0 1 = dec(13)
+      after:  0 0 0 0 ... 1 1 0 1 0 0 = dec(52)
+
+NOT(~):
+- Steps:
+    - Flip
+    - Check if -ve
+        - If -ve:
+            - Store the 2's complement
+        - If +ve:
+            - Store as it is
+- x = ~(5)
+    0 0 0 0 ... 0 0 1 0 1 = dec(5)
+    1 1 1 1 ... 1 1 0 1 0
+
+    since, it is -ve, perform 2's complenent (Note: signed bit does not get flipped)
+
+    1 0 0 0 ... 0 0 1 0 1 = dec(-5)
+    +                   1 = dec(1)
+    ---------------------
+    1 0 0 0 ... 0 0 1 1 0 = dec(-6)
+- x = ~(-6)
+    0 0 0 0 ... 0 0 1 1 0 = dec(6)
+
+    now 2's complement of 6 is -6
+
+    1 1 1 1 ... 1 1 0 0 1
+    +                   1 = dec(1)
+    ---------------------
+    1 1 1 1 ... 1 1 0 1 0 = dec(-6)
+
+    now flip all the bits,
+    0 0 0 0 ... 0 0 1 0 1 = dec(5)
+
+    since, its not negative, we stop
+    0 0 0 0 ... 0 0 1 0 1 = dec(5)

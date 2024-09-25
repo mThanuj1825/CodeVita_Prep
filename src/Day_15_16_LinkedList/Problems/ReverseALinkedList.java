@@ -10,7 +10,7 @@ public class ReverseALinkedList {
 		Node n2 = new Node(2, n3);
 		Node n1 = new Node(1, n2);
 
-		n1 = reverse(n1);
+		n1 = solve(n1);
 
 		Node t = n1;
 		while (t != null) {
@@ -21,7 +21,7 @@ public class ReverseALinkedList {
 		System.out.println("null");
 	}
 
-	public static Node reverse(Node head) {
+	public static Node solve(Node head) {
 		Node prev = null;
 		Node cur = head;
 

@@ -1,0 +1,8 @@
+bin(1101) = dec(13)
+
+    1 1 0 1
+    8 4 2 1
+
+    i.e. 8 + 4 + 1 = 13
+
+- So, we add the corresponding decimal value on that face value

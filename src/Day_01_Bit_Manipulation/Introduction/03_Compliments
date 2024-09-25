@@ -1,0 +1,11 @@
+1's compliment:
+- Just flip all the bits
+- dec(13) = bin(1101)
+            1's(0010)
+
+2's compliment:
+- Calculate 1's compliment
+- Add +1 to it
+- dec(13) = bin(1101)
+            1's(0010)
+            2's(0011)

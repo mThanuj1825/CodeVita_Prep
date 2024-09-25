@@ -1,0 +1,21 @@
+Method 1:
+dec(7) = bin(111)
+
+    2 | 7 - 1
+    -----
+    2 | 3 - 1
+    -----
+      | 1
+
+- Do factorization with '2'
+- Write the corresponding remainders on the right side of the current number
+- After the factorization, write all the remainders from bottom to top
+
+Method 2:
+dec(7) = bin(111)
+
+- We can use the "16 8 4 2 1" rule
+- Like, '7' can be represented as, 4 + 2 + 1
+- Then 16 8 4 2 1
+        0 0 1 1 1
+- The required values can be represented by '1', and others can be represented by '0'
