@@ -39,7 +39,6 @@ public class Set_ith_Bit {
 			int i
 	) {
 		int mask = 1 << i;
-
 		return (n | mask);
 	}
 }
