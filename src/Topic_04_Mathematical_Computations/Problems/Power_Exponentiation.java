@@ -48,11 +48,12 @@ public class Power_Exponentiation {
 		}
 
 		long half = solve(n, x / 2);
+		long full = half * half;
 
 		if (x % 2 == 0) {
-			return half * half;
+			return full;
 		}
 
-		return n * half * half;
+		return n * full;
 	}
 }
