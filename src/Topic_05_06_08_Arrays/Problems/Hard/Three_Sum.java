@@ -69,10 +69,6 @@ public class Three_Sum {
 					while (j < k && arr[k] == prev) {
 						k--;
 					}
-					prev = arr[i];
-					while (i < arr.length && arr[i] == prev) {
-						i++;
-					}
 				} else if (sum < 0) {
 					int prev = arr[j];
 					while (j < k && arr[j] == prev) {
@@ -85,7 +81,11 @@ public class Three_Sum {
 					}
 				}
 			}
-			i++;
+
+			int prev = arr[i];
+			while (i < arr.length && arr[i] == prev) {
+				i++;
+			}
 		}
 
 		return res;
