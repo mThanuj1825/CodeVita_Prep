@@ -1,0 +1,10 @@
+- Sequential searching algorithm
+- Starts at one end, and goes to the other end searching for the element one at a time
+- Algorithm: The algorithm for linear search can be broken down into the following steps:
+    - Start: Begin at the first element of the collection of elements.
+    - Compare: Compare the current element with the desired element.
+    - Found: If the current element is equal to the desired element, return true or index to the current element.
+    - Move: Otherwise, move to the next element in the collection.
+    - Repeat: Repeat steps 2-4 until we have reached the end of collection.
+    - Not found: If the end of the collection is reached without finding the desired element, return that the desired element is not in the array.
+
