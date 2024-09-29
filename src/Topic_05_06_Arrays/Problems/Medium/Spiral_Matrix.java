@@ -3,6 +3,41 @@ package Topic_05_06_Arrays.Problems.Medium;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Problem: Given a 2D matrix, return all elements of the matrix in spiral order.
+ * The spiral order starts from the top-left corner, traverses the top row from
+ * left to right, the right column from top to bottom, the bottom row from right
+ * to left, and the left column from bottom to top, and continues inward.
+ * *
+ * Intuition:
+ * The problem can be solved by maintaining boundaries for the top, bottom, left,
+ * and right edges of the matrix and iteratively reducing these boundaries as we
+ * traverse the matrix in spiral order.
+ * *
+ * Approach:
+ * 1. Initialize variables for the top, bottom, left, and right boundaries.
+ * 2. Iterate through the matrix, adding elements in the following order:
+ * - Traverse from left to right along the top boundary.
+ * - Traverse from top to bottom along the right boundary.
+ * - Traverse from right to left along the bottom boundary (if within bounds).
+ * - Traverse from bottom to top along the left boundary (if within bounds).
+ * 3. After each traversal, update the boundaries to narrow the matrix area for
+ * the next spiral traversal.
+ * 4. Continue this process until all elements are added.
+ * *
+ * Topics / Data Structures:
+ * - Arrays
+ * - Simulation
+ * - Iteration
+ * *
+ * Time Complexity:
+ * - O(n * m): We visit each element of the matrix exactly once, where n is the
+ * number of rows and m is the number of columns.
+ * *
+ * Space Complexity:
+ * - O(n * m): We store the result in a list containing all elements of the matrix.
+ */
+
 public class Spiral_Matrix {
 	public static void main(String[] args) {
 		int[][] arr = {{1, 2, 3, 4, 5, 6}, {20, 21, 22, 23, 24, 7}, {19, 32, 33, 34, 25, 8}, {18, 31, 36, 35, 26, 9},

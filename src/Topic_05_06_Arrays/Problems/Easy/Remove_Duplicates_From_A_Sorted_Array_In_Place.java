@@ -48,7 +48,7 @@ public class Remove_Duplicates_From_A_Sorted_Array_In_Place {
 			if (arr[j] != prev) {
 				i++;
 				arr[i] = arr[j];
-				prev = arr[j];
+				prev = arr[i];
 			}
 		}
 
