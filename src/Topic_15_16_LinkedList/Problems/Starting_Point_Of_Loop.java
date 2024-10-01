@@ -33,8 +33,8 @@ public class Starting_Point_Of_Loop {
 		System.out.println(solve(n1));
 	}
 
-	public static int solve(Node root) {
-		Node slow = root, fast = root;
+	public static int solve(Node head) {
+		Node slow = head, fast = head;
 
 		// Detect the cycle
 		while (fast != null && fast.next != null) {
@@ -43,7 +43,7 @@ public class Starting_Point_Of_Loop {
 
 			if (slow == fast) {
 				// Move slow pointer to the start of the list
-				slow = root;
+				slow = head;
 
 				// Find the starting point of the loop
 				while (slow != fast) {

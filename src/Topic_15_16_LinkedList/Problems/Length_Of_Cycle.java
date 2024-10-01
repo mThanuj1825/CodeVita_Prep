@@ -31,8 +31,8 @@ public class Length_Of_Cycle {
 		System.out.println(solve(n1));
 	}
 
-	public static int solve(Node root) {
-		Node slow = root, fast = root;
+	public static int solve(Node head) {
+		Node slow = head, fast = head;
 
 		while (fast != null && fast.next != null) {
 			slow = slow.next;

@@ -14,12 +14,12 @@ public class Palindrome_Or_Not {
 		System.out.println(solve(n1));
 	}
 
-	public static boolean solve(Node root) {
-		if (root == null || root.next == null) {
+	public static boolean solve(Node head) {
+		if (head == null || head.next == null) {
 			return true;
 		}
 
-		Node slow = root, fast = root;
+		Node slow = head, fast = head;
 
 		while (fast.next != null && fast.next.next != null) {
 			slow = slow.next;
@@ -30,7 +30,7 @@ public class Palindrome_Or_Not {
 			return false;
 		}
 
-		Node left = root;
+		Node left = head;
 		Node right = Reverse_A_LinkedList.solve(slow.next);
 
 		while (right != null) {
