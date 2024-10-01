@@ -21,7 +21,7 @@ import Topic_15_16_LinkedList.Implementation.SingleLinkedList.Node;
  * linked list.
  * * Iterate through the list while moving the slow pointer one step at a time
  * and the fast pointer two steps at a time.
- * * When the fast pointer reaches the end (null), the slow pointer will be at
+ * * When the fast pointer's next reaches the end (null), the slow pointer will be at
  * the middle node. Print the value of the slow pointer.
  * *
  * Topics / Data Structures used:
@@ -47,7 +47,7 @@ public class Print_Middle_Of_LinkedList {
 
 		Node slow = n1, fast = n1;
 
-		while (fast != null && fast.next != null) {
+		while (fast.next != null && fast.next.next != null) {
 			slow = slow.next;
 			fast = fast.next.next;
 		}

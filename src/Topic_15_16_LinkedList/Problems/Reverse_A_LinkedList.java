@@ -55,16 +55,16 @@ public class Reverse_A_LinkedList {
 	}
 
 	public static Node solve(Node head) {
-		Node prev = null;
-		Node cur = head;
-
-		while (cur != null) {
-			Node nxt = cur.next;
-			cur.next = prev;
-			prev = cur;
-			cur = nxt;
+		if (head == null || head.next == null) {
+			return head;
 		}
 
-		return prev;
+		Node newHead = solve(head.next);
+
+		Node front = head.next;
+		front.next = head;
+		head.next = null;
+
+		return newHead;
 	}
 }
