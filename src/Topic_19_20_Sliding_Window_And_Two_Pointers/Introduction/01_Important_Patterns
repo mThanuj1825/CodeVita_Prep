@@ -1,0 +1,7 @@
+- Constant Window
+    - Same sized sliding window
+- Longest subarray / substring where <condition>
+    - Must be consecutive
+    - Longest subarray with sum <= k etc.
+- Number of subarrays where <condition>
+- Shortest / Minimum window where <condition>
