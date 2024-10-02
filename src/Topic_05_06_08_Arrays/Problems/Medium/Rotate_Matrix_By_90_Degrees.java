@@ -1,5 +1,7 @@
 package Topic_05_06_08_Arrays.Problems.Medium;
 
+import Topic_05_06_08_Arrays.Problems.Easy.Reverse_An_Array;
+
 import java.util.Arrays;
 
 /**
@@ -30,7 +32,7 @@ import java.util.Arrays;
 
 public class Rotate_Matrix_By_90_Degrees {
 	public static void main(String[] args) {
-		int[][] arr = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};
+		int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
 		solve(arr);
 		for (int[] row : arr) {
@@ -49,12 +51,8 @@ public class Rotate_Matrix_By_90_Degrees {
 			}
 		}
 
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n / 2; j++) {
-				int temp = arr[i][j];
-				arr[i][j] = arr[i][n - j - 1];
-				arr[i][n - j - 1] = temp;
-			}
+		for (int[] row : arr) {
+			Reverse_An_Array.solve(row, 0, row.length - 1);
 		}
 	}
 }

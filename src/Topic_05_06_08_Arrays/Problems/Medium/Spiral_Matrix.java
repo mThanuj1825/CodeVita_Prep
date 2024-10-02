@@ -51,8 +51,8 @@ public class Spiral_Matrix {
 		int m = arr[0].length;
 		List<Integer> res = new ArrayList<>();
 
-		int left = 0, right = m - 1;
 		int top = 0, bottom = n - 1;
+		int left = 0, right = m - 1;
 
 		while (top <= bottom && left <= right) {
 			for (int i = left; i <= right; i++) {

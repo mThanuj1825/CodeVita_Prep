@@ -3,38 +3,27 @@ package Topic_05_06_08_Arrays.Problems.Medium;
 import java.util.Arrays;
 
 /**
- * Problem Statement:
- * Given an array of integers where the number of positive and negative integers are equal,
- * rearrange the elements in the array so that the positive and negative integers are placed
- * alternatively. The positive integer should always appear first, followed by a negative integer.
- * You must do this without changing the relative order of positive and negative integers.
+ * Problem: Rearrange array elements such that positive and negative numbers appear alternatively.
+ * The first position should have a positive number, the second a negative, and so on.
  * *
  * Intuition:
- * The goal is to place positive and negative integers alternatively, maintaining the order of
- * appearance of both types. We can use two pointers, one starting from index 0 (for positive
- * numbers) and another from index 1 (for negative numbers). We iterate through the input array
- * and assign the positive and negative numbers to their respective positions in the result array.
+ * The task is to reorder the array such that positive and negative numbers alternate.
+ * By maintaining two pointers, one for positive numbers and one for negative, we can swap elements
+ * to ensure the correct order. One pointer moves through even indices (for positive numbers),
+ * and the other moves through odd indices (for negative numbers).
  * *
  * Approach:
- * 1. Initialize an empty result array `res` of the same size as the input array.
- * 2. Use two pointers `p` and `n`, where `p` tracks the position of the next positive number
- * (starting at index 0) and `n` tracks the position of the next negative number (starting at index 1).
- * 3. Iterate over the input array:
- * - If the current element is positive, place it at index `p` of the result array and increment `p` by 2.
- * - If the current element is negative, place it at index `n` of the result array and increment `n` by 2.
- * 4. Return the result array.
+ * 1. Initialize two pointers, `p` for positive numbers (starting at index 0) and `n` for negative numbers (starting
+ * at index 1).
+ * 2. Traverse the array:
+ *    - If `p` is not at a positive number, move `p` forward by 2.
+ *    - If `n` is not at a negative number, move `n` forward by 2.
+ * 3. If both `p` and `n` find misplaced elements, swap them to place them in their correct positions.
+ * 4. Continue this process until all elements are rearranged.
  * *
- * Topics / Data Structures Used:
- * - Arrays
- * - Two Pointer Technique
- * *
- * Time Complexity:
- * O(n), where `n` is the length of the input array. We make a single pass over the input array.
- * *
- * Space Complexity:
- * O(n), where `n` is the length of the input array. We use an additional result array of the same size.
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  */
-
 public class Rearrange_Array_Elements_By_Sign {
 	public static void main(String[] args) {
 		int[] arr = {3, 1, -2, -5, 2, -4};
@@ -43,20 +32,27 @@ public class Rearrange_Array_Elements_By_Sign {
 	}
 
 	public static int[] solve(int[] arr) {
-		int[] res = new int[arr.length];
-
 		int p = 0, n = 1;
 
-		for (int i : arr) {
-			if (i < 0) {
-				res[n] = i;
-				n += 2;
-			} else {
-				res[p] = i;
+		while (p < arr.length && n < arr.length) {
+			// Move `p` to the next incorrect positive position
+			while (p < arr.length && arr[p] > 0) {
 				p += 2;
+			}
+
+			// Move `n` to the next incorrect negative position
+			while (n < arr.length && arr[n] < 0) {
+				n += 2;
+			}
+
+			// Swap misplaced positive and negative numbers
+			if (p < arr.length && n < arr.length) {
+				int temp = arr[p];
+				arr[p] = arr[n];
+				arr[n] = temp;
 			}
 		}
 
-		return res;
+		return arr;
 	}
 }

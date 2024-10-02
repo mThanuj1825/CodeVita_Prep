@@ -17,8 +17,8 @@ import java.util.Arrays;
  * Approach:
  * - We use three pointers: low, mid, and high.
  * - low: tracks the position for the next 0.
- * - high: tracks the position for the next 2.
  * - mid: scans the array, deciding where to place each element.
+ * - high: tracks the position for the next 2.
  * - The array is modified in place without using extra space.
  * *
  * Time Complexity:
