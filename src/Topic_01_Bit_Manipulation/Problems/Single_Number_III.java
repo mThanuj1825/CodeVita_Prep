@@ -45,14 +45,14 @@ public class Single_Number_III {
 		}
 
 		int idx = 0;
+		int mask = 0;
 		for (; idx < 32; idx++) {
-			int mask = 1 << idx;
+			mask = 1 << idx;
 			if ((total_xor & mask) != 0) {
 				break;
 			}
 		}
 
-		int mask = 1 << idx;
 		int bucket_1 = 0;
 		int bucket_2 = 0;
 
